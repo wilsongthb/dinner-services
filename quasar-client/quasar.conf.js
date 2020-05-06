@@ -87,7 +87,7 @@ cfg.module.rules.push({
           loader: 'eslint-loader',
           exclude: /node_modules/,
           options: {
-            formatter: require('eslint').CLIEngine.getFormatter('stylish'),
+            // formatter: require('eslint').CLIEngine.getFormatter('stylish'),
           }
         })
       },

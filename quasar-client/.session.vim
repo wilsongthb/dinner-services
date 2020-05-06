@@ -1,6 +1,6 @@
 " ~/dev/external/dinner-services/quasar-client/.session.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 05 May 2020 at 22:03:56.
+" Created by session.vim 2.13.1 on 05 May 2020 at 22:26:18.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -25,7 +25,7 @@ set shortmess=aoO
 argglobal
 %argdel
 $argadd package.json
-edit package.json
+edit .gitignore
 set splitbelow splitright
 wincmd t
 set winminheight=0
@@ -42,14 +42,23 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 11 - ((10 * winheight(0) + 26) / 52)
+let s:l = 27 - ((0 * winheight(0) + 25) / 50)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-11
+27
 normal! 0
 tabnext 1
-badd +0 package.json
+badd +89 quasar.conf.js
+badd +1 package.json
+badd +1 src/components/EssentialLink.vue
+badd +1 src/pages/Index.vue
+badd +1 src/router/index.js
+badd +1 src/router/routes.js
+badd +1 babel.config.js
+badd +1 jsconfig.json
+badd +1 src/App.vue
+badd +4 .gitignore
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
 "   silent exe 'bwipe ' . s:wipebuf
 endif
